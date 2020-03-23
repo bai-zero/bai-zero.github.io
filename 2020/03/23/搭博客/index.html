@@ -15,8 +15,8 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="前言寒假在家，某天，在b站上看到了大佬CodeSheep的手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo，看了之后着手搭建了属于自己的博客。 视频里博客是搭建在Github上的，但其终究是国外的网站，访问速度得不到保障。推荐使用Gitee，Gitee类似于国内的Github，访问速度没问题 环境要求 Windows系统电脑(Mac用户可以参考上面的视频) git Node.js">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-03-23T06:51:53.000Z">
-<meta property="article:modified_time" content="2020-03-23T10:11:07.962Z">
+<meta property="article:published_time" content="2020-03-23T06:51:56.000Z">
+<meta property="article:modified_time" content="2020-03-23T11:05:20.768Z">
 <meta property="article:author" content="bai-zero">
 <meta name="twitter:card" content="summary">
   
@@ -167,7 +167,7 @@
 
         
         <a href="2020/03/23/搭博客/" class="archive-article-date">
-  	<time datetime="2020-03-23T06:51:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-23</time>
+  	<time datetime="2020-03-23T06:51:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-23</time>
 </a>
         
       </header>
@@ -190,7 +190,7 @@
 <li><p>安装完成之后打开Git Bash，输入<code>git version</code>查看版本：(我这里安装的版本是2.23.0)</p>
 </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1 $ git version </span><br><span class="line">2 git version 2.23.0.windows.1</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git version </span><br><span class="line">git version 2.23.0.windows.1</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>能看到版本号就说明你安装成功了，之后的命令都是在这里运行的</li>
@@ -201,7 +201,7 @@
 <li>安装步骤：双击下载好的msi文件，也是一路下一步就好了</li>
 <li>安装完成后打开Git Bash，输入<code>node -v</code>和<code>npm -v</code>查看node和npm的版本：</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1 $ node -v</span><br><span class="line">2 v12.14.1</span><br><span class="line"></span><br><span class="line">3 $ npm -v</span><br><span class="line">4 6.13.4</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ node -v</span><br><span class="line">v12.14.1</span><br><span class="line"></span><br><span class="line">$ npm -v</span><br><span class="line">6.13.4</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li><p>到这里前置步骤就已经算完成了，接下来我们就来安装Hexo博客</p>
@@ -221,7 +221,7 @@
 <ul>
 <li>接着用<code>Hexo -v</code>来验证是否安装成功</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1 $ hexo -v</span><br><span class="line">2 hexo-cli: 3.1.0</span><br><span class="line">3 os: Windows_NT 10.0.17134 win32 x64</span><br><span class="line">4 node: 12.14.1</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo -v</span><br><span class="line">hexo-cli: 3.1.0</span><br><span class="line">os: Windows_NT 10.0.17134 win32 x64</span><br><span class="line">node: 12.14.1</span><br></pre></td></tr></table></figure>
 
 <p>​       如果出现以上信息，那么恭喜安装成功了</p>
 <ul>
@@ -232,7 +232,7 @@
 <li><p>在创建的文件夹目录下右键选择<code>Git Bash Here</code>，也就是在此处打开Git Bash终端</p>
 </li>
 <li><p>输入Hexo初始化命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1 $ hexo init</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
 
 <p>这个命令执行需要一定的时间，请耐心等待</p>
 </li>
