@@ -8,13 +8,15 @@
   <link rel="dns-prefetch" href="https:/bai-zero.github.io">
   <title>搭博客 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="前言寒假在家，某天，在b站上看到了大佬CodeSheep的手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo，看了之后着手搭建了属于自己的博客。 视频里博客是搭建在Github上的，但其终究是国外的网站，访问速度得不到保障。推荐使用Gitee，Gitee类似于国内的Github，访问速度没问题 环境要求 Windows系统电脑(Mac用户可以参考上面的视频) git Node.js">
+<meta property="og:type" content="article">
 <meta property="og:title" content="搭博客">
 <meta property="og:url" content="2020/03/23/%E6%90%AD%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="前言寒假在家，某天，在b站上看到了大佬CodeSheep的手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo，看了之后着手搭建了属于自己的博客。 视频里博客是搭建在Github上的，但其终究是国外的网站，访问速度得不到保障。推荐使用Gitee，Gitee类似于国内的Github，访问速度没问题 环境要求 Windows系统电脑(Mac用户可以参考上面的视频) git Node.js">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-03-23T06:51:53.000Z">
-<meta property="article:modified_time" content="2020-03-23T06:52:40.504Z">
+<meta property="article:modified_time" content="2020-03-23T10:07:29.363Z">
 <meta property="article:author" content="bai-zero">
 <meta name="twitter:card" content="summary">
   
@@ -172,7 +174,73 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a><strong>前言</strong></h1><p>寒假在家，某天，在b站上看到了大佬<a href="https://space.bilibili.com/384068749?spm_id_from=333.788.b_765f7570696e666f.1" target="_blank" rel="noopener">CodeSheep</a>的<a href="https://www.bilibili.com/video/av44544186/?spm_id_from=333.788.videocard.0" target="_blank" rel="noopener">手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo</a>，看了之后着手搭建了属于自己的博客。</p>
+<p>视频里博客是搭建在Github上的，但其终究是国外的网站，访问速度得不到保障。推荐使用Gitee，Gitee类似于国内的Github，访问速度没问题</p>
+<h2 id="环境要求"><a href="#环境要求" class="headerlink" title="环境要求"></a>环境要求</h2><ul>
+<li>Windows系统电脑(Mac用户可以参考上面的视频)</li>
+<li><a href="https://git-scm.com/" target="_blank" rel="noopener">git</a></li>
+<li><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></li>
+</ul>
+<h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p>因为我们要用到<a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a>中的<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">Git Bash</a>类似于Windows的cmd命令行，不过要好用许多(我开始是用cmd按视频的步骤来的，运行命令容易报错)。</p>
+<ul>
+<li><p><a href="https://git-scm.com/download/win" target="_blank" rel="noopener">下载地址</a></p>
+</li>
+<li><p>安装步骤：双击下载好的exe文件，一路点击next就好了</p>
+</li>
+<li><p>安装完成之后打开Git Bash，输入<code>git version</code>查看版本：(我这里安装的版本是2.23.0)</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1 $ git version </span><br><span class="line">2 git version 2.23.0.windows.1</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>能看到版本号就说明你安装成功了，之后的命令都是在这里运行的</li>
+</ul>
+<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p><a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>是基于<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a>制作的静态博客，我们要用到Node.js里面的<a href="https://www.npmjs.cn/" target="_blank" rel="noopener">npm</a>(node package manager)包管理器来安装插件，如果你想玩Hexo博客，那么这个Node.js是必装的。</p>
+<ul>
+<li><a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">下载地址</a>(选择自己电脑版本相对应的包来下载)</li>
+<li>安装步骤：双击下载好的msi文件，也是一路下一步就好了</li>
+<li>安装完成后打开Git Bash，输入<code>node -v</code>和<code>npm -v</code>查看node和npm的版本：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1 $ node -v</span><br><span class="line">2 v12.14.1</span><br><span class="line"></span><br><span class="line">3 $ npm -v</span><br><span class="line">4 6.13.4</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>到这里前置步骤就已经算完成了，接下来我们就来安装Hexo博客</p>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2></li>
+</ul>
+<p>安装<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>，我们需要借助<a href="https://www.npmjs.cn/" target="_blank" rel="noopener">npm</a>这个工具来安装，但是我们国内下载镜像源的速度很慢，所以我们可以先利用npm工具来安装一个<a href="https://npm.taobao.org/" target="_blank" rel="noopener">cnpm</a>工具(国内的淘宝npm镜像源)，这样一来速度会快很多。</p>
+<ul>
+<li>安装cnpm：(安装完之后照样可以用<code>cnpm -v</code>来查看版本号验证是否成功)</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g cnpm -registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>用cnpm安装Hexo</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>接着用<code>Hexo -v</code>来验证是否安装成功</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1 $ hexo -v</span><br><span class="line">2 hexo-cli: 3.1.0</span><br><span class="line">3 os: Windows_NT 10.0.17134 win32 x64</span><br><span class="line">4 node: 12.14.1</span><br></pre></td></tr></table></figure>
+
+<p>​       如果出现以上信息，那么恭喜安装成功了</p>
+<ul>
+<li>到这里Hexo博客已经算是安装完成了，步骤还是非常简单的，重点是耐心~</li>
+</ul>
+<h2 id="初始化Hexo"><a href="#初始化Hexo" class="headerlink" title="初始化Hexo"></a>初始化Hexo</h2><p>在你的电脑上建一个文件夹，命名没有要求，我这里创建的是blog，文件夹路径也无所谓，最好装在出了系统盘的固态硬盘中，路径要自己找得到。</p>
+<ul>
+<li><p>在创建的文件夹目录下右键选择<code>Git Bash Here</code>，也就是在此处打开Git Bash终端</p>
+</li>
+<li><p>输入Hexo初始化命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1 $ hexo init</span><br></pre></td></tr></table></figure>
+
+<p>这个命令执行需要一定的时间，请耐心等待</p>
+</li>
+<li><p>初始化完成之后可以查看指定文件夹目录下有：</p>
+</li>
+</ul>
+<p>​            </p>
+
       
 
       
